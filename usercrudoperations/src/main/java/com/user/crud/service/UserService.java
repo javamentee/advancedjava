@@ -1,8 +1,8 @@
 package com.user.crud.service;
 
 import java.util.List;
-import java.util.Optional;
 
+import com.user.crud.dto.ResponseDto;
 import com.user.crud.entity.User;
 
 public interface UserService {
@@ -11,11 +11,13 @@ public interface UserService {
 	
 	public List<User> getAllUsers();
 	
-	public Optional<User> getUserById(int id);
+	public User getUserById(Integer id);
 	
-	public User updateUser(int id,User u);
+	public User updateUser(Integer id,User u);
 	
-	public User patchUser(int id,String name);
+	public User patchUser(Integer id,String name);
 	
-	public void deleteUser(int id);
+	public void deleteUser(Integer id);
+	
+	public ResponseDto getDepartmentBasedOnUser(Integer id);
 }

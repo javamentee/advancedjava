@@ -1,0 +1,13 @@
+server:
+  port: 8088
+  
+  
+spring:
+  application:
+    name : config-server
+  profiles:
+    active: native
+    
+logging:
+  file:
+    name:  C:\workspace\logs\config-server.log

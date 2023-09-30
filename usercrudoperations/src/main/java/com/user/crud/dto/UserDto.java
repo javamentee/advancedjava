@@ -1,27 +1,10 @@
+package com.user.crud.dto;
 
-package com.user.crud.entity;
+public class UserDto {
 
-import jakarta.persistence.*;
-
-@Table(name = "User")
-@Entity
-public class User {
-
-	@Id
-	@GeneratedValue
 	private int userId;
-	@Column(name = "uname")
 	private String name;
 	private int age;
-	private String departmentId;
-
-	public String getDepartmentId() {
-		return departmentId;
-	}
-
-	public void setDepartmentId(String departmentId) {
-		this.departmentId = departmentId;
-	}
 
 	public int getUserId() {
 		return userId;
@@ -46,5 +29,4 @@ public class User {
 	public void setAge(int age) {
 		this.age = age;
 	}
-
 }
